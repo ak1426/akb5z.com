@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+            integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+            crossorigin="anonymous" />
+        <!-- style.css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Zomato</title>
+    </head>
+
+    <body>
+        <!-- -----------header section------------- -->
+        <section class="header_section img-fluid mt-0" style="background-image: url(assets/image/bg.png);">
+            <header class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container-fluid text-white mt-2">
+                            <p class="get_app_header align-items-center mb-0">Get the app</p>
+                            <button class="navbar-toggler text-white" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white login_text" href="#">Login</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white signup_text" href="#">Signup</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- text center -->
+            <div class="mt-5">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <div class="logo text-white mt-4">zomato</div>
+                                <div class="logo_text h1 text-white mb-4">
+                                    Discover the best food & drinks in Pune
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <span class="input-group-text w_100 bg-transparent p-0 border-0">
+                                            <div class="dropdown w_100">
+                                                <button class="btn dropdown-toggle location_button w_100" type="button"
+                                                    id="dropdownMenuButton" data-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <span>
+                                                        <i class="fa fa-map-marker-alt marker mr-2"></i>
+                                                        <span class="text-muted">Pune</span>
+                                                    </span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown_menu w-100"
+                                                    aria-labelledby="dropdownMenuButton">
+                                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                        <input type="text" class="form-control txt_search"
+                                            placeholder="Search for restaurant, cuisine or a dish">
+                                        <span class="d-md-none search_icon_sm text-muted">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                        <span class="input-group-text search_icon px-4 ">
+                                            <span><i class="fa fa-search text-white"></i></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- header cards -->
+        <section class="header_cards mt-5">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-md-3 col-10 mx-auto">
+                        <a href="#">
+                            <div class="card header_card text-center text-dark">
+                                <img src="assets/image/1.png" class="card-img-top img-fluid card_img" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize">order food online</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <a href="#">
+                            <div class="card header_card text-center text-dark">
+                                <img src="assets/image/2.png" class="card-img-top img-fluid card_img" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Go out for a meal</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <a href="#">
+                            <div class="card header_card text-center text-dark">
+                                <img src="assets/image/3.png" class="card-img-top img-fluid card_img" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize">nightlife & clubs</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <a href="#">
+                            <div class="card header_card text-center text-dark">
+                                <img src="assets/image/4.png" class="card-img-top img-fluid card_img" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title text-capitalize">zomato pro</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- collection cards -->
+        <section class="collection_cards my-5">
+            <div class="container">
+                <h1 class="title">Collections</h1>
+                <div class="d-flex justify-content-between">
+                    <div class="h5 text-muted">
+                        Explore curated lists of top restaurants, cafes, pubs, and bars in Pune, based on trends
+                    </div>
+                    <div class="">
+                        <a href="#" class="collection_link">
+                            All collections in Pune<i class="fa fa-caret-right ml-3"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-4 gy-4">
+                    <div class="col-md-3 col-10 mx-auto">
+                        <div class="card text-white collection_card">
+                            <img src="assets/image/5.jpg" class="card-img img-fluid collection_img" alt="image">
+                            <div class="card_text"></div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-capitalize">Trending this week</h5>
+                                <p class="card-text">30 Places<i class="fa fa-caret-right ml-2"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <div class="card text-white collection_card">
+                            <img src="assets/image/6.png" class="card-img img-fluid collection_img" alt="image">
+                            <div class="card_text"></div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-capitalize">Pune's finest</h5>
+                                <p class="card-text">112 Places<i class="fa fa-caret-right ml-2"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <div class="card text-white collection_card">
+                            <img src="assets/image/7.png" class="card-img img-fluid collection_img" alt="image">
+                            <div class="card_text"></div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-capitalize">beer takeaway</h5>
+                                <p class="card-text">7 Places<i class="fa fa-caret-right ml-2"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-10 mx-auto">
+                        <div class="card text-white collection_card">
+                            <img src="assets/image/8.jpg" class="card-img img-fluid collection_img" alt="image">
+                            <div class="card_text"></div>
+                            <div class="card-img-overlay">
+                                <h5 class="card-title text-capitalize">brilliant biryanies</h5>
+                                <p class="card-text">14 Places<i class="fa fa-caret-right ml-2"></i> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- localities -->
+        <section class="localities_section my-5">
+            <div class="container">
+                <h1 class="localities_title text-center">
+                    Popular localities in and around
+                    <span class="localities_location">Pune</span>
+                </h1>
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    Baner (672 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    Viman nagar (748 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    Hinjwadi (814 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    koregaon (231 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    wakad (823 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    kothrud (876 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    kalyani nagar (175 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    kharadi (768 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    mundhwa (178 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    pimple saudagar (474 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    aundh (377 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-3 col-10 mx-auto">
+                        <a href="#" class="text-muted ">
+                            <div class="d-flex align-items-center place">
+                                <h4 class="text-muted mb-0 text-capitalize">
+                                    FC road (109 places)
+                                </h4>
+                                <span><i class="fa fa-chevron-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- get app -->
+        <section class="get_app py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 hide_mob">
+                        <img src="assets/image/9.png" class="img-fluid mob_img float-right" alt="image">
+                    </div>
+                    <div class="col-md-7 col-sm-12 mt-5 mx-auto get_app_right">
+                        <div class="app_heading">
+                            <h1 class="app_heading_text">Get the Zomato App</h1>
+                        </div>
+                        <div class="mt-3 mb-4 h5 text-muted app_heading_text_p">
+                            <p>We will send you a link, open it on your phone to download the app</p>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1" checked>
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Email
+                                </label>
+                            </div>
+                            <div class="form-check ml-5">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Phone
+                                </label>
+                            </div>
+                        </div>
+                        <div class="email_sec d-flex mb-4">
+                            <fieldset class="form-group mr-2 w-50 w_75">
+                                <input type="email" class="form-control" id="Email">
+                                <label for="exampleInputEmail1">Email</label>
+                            </fieldset>
+                            <button class="btn btn-danger sm_hide">Share App Link</button>
+                            <button class="btn btn-danger sm_view">Share</button>
+                        </div>
+                        <div class="text-muted text_center mb-3">
+                            <p>Dowload app from</p>
+                        </div>
+                        <div class="d-flex get_app_img">
+                            <img src="assets/image/10.png" class="img-fluid mr-2" alt="image">
+                            <img src="assets/image/11.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- explore -->
+        <section class="explore_section">
+            <div class="container">
+                <div class="row explore_divs">
+                    <h2 class="mb-4">Explore other options for you here</h2>
+                    <h4 class="mb-4">Popular cuisines near me</h4>
+                    <div class="col-12">
+                        <ul class="d-flex flex-wrap text-muted">
+                            <li><a href="#">Bakery food near me</a></li>
+                            <li><a href="#">Beverages food near me</a></li>
+                            <li><a href="#">Biryani food near me</a></li>
+                            <li><a href="#">Burger food near me</a></li>
+                            <li><a href="#">Cafe food near me</a></li>
+                            <li><a href="#">Chinese food near me</a></li>
+                            <li><a href="#">Continental food near me</a></li>
+                            <li><a href="#">Desserts food near me</a></li>
+                            <li><a href="#">Italian food near me</a></li>
+                            <li><a href="#">Maharashtrian food near me</a></li>
+                            <li><a href="#">Malwani food near me</a></li>
+                            <li><a href="#">Mughlai food near me</a></li>
+                            <li><a href="#">North Indian food near me</a></li>
+                            <li><a href="#">Pizza food near me</a></li>
+                            <li><a href="#">Rolls food near me</a></li>
+                            <li><a href="#">Sandwich food near me</a></li>
+                            <li><a href="#">Seafood food near me</a></li>
+                            <li><a href="#">South Indian food near me</a></li>
+                            <li><a href="#">Street Food food near me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row explore_divs">
+                    <h4 class="mb-4">Popular restaurants near me</h4>
+                    <div class="col-12">
+                        <ul class="d-flex flex-wrap text-muted">
+                            <li><a href="#">Bakeries near me</a></li>
+                            <li><a href="#">Bars near me</a></li>
+                            <li><a href="#">Beverage Shops near me</a></li>
+                            <li><a href="#">Bhojanalya near me</a></li>
+                            <li><a href="#">Cafés near me</a></li>
+                            <li><a href="#">Clubs near me</a></li>
+                            <li><a href="#">Confectioneries near me</a></li>
+                            <li><a href="#">Dessert Parlors near me</a></li>
+                            <li><a href="#">Dhabas near me</a></li>
+                            <li><a href="#">Fine Dining near me</a></li>
+                            <li><a href="#">Food Courts near me</a></li>
+                            <li><a href="#">Food Trucks near me</a></li>
+                            <li><a href="#">Irani Cafes near me</a></li>
+                            <li><a href="#">Kiosks near me</a></li>
+                            <li><a href="#">Lounges near me</a></li>
+                            <li><a href="#"> Microbreweries near me</a></li>
+                            <li><a href="#">Paan Shop near me</a></li>
+                            <li><a href="#">Pubs near me</a></li>
+                            <li><a href="#">Quick Bites near me</a></li>
+                            <li><a href="#">Sweet Shops near me</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row explore_divs">
+                    <div class="col-12">
+                        <h4 class="mb-4">Top Restaurant Chains</h4>
+                        <ul class="d-flex flex-wrap text-muted resturants">
+                            <li><a href="#">Domino's</a></li>
+                            <li><a href="#">Dunkin' Donuts</a></li>
+                            <li><a href="#">Faasos</a></li>
+                            <li><a href="#">KFC</a></li>
+                            <li><a href="#">McDonald's</a></li>
+                            <li><a href="#">Paradise Biryani</a></li>
+                            <li><a href="#">Subway</a></li>
+                            <li><a href="#">WOW! Momo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row explore_divs p-3">
+                    <h4 class="mb-4">Cities We Deliver To</h4>
+                    <div class="div_5 div_2">
+                        <ul class="flex-wrap text-muted cities">
+                            <li><a href="#">Delhi NCR</a></li>
+                            <li><a href="#">Kolkata</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Bengaluru</a></li>
+                            <li><a href="#">Pune</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Lucknow</a></li>
+                        </ul>
+                    </div>
+                    <div class="div_5 div_2">
+                        <ul class="flex-wrap text-muted cities">
+                            <li><a href="#">Kochi</a></li>
+                            <li><a href="#">Jaipur</a></li>
+                            <li><a href="#">Ahmedabad</a></li>
+                            <li><a href="#">Chandigarh</a></li>
+                            <li><a href="#">Goa</a></li>
+                            <li><a href="#">Indore</a></li>
+                            <li><a href="#">Nashik</a></li>
+                            <li><a href="#">Ooty</a></li>
+                        </ul>
+                    </div>
+                    <div class="div_5 div_2">
+                        <ul class="flex-wrap text-muted cities">
+                            <li><a href="#">Shimla</a></li>
+                            <li><a href="#">Ludhiana</a></li>
+                            <li><a href="#">Guwahati</a></li>
+                            <li><a href="#">Amritsar</a></li>
+                            <li><a href="#">Kanpur</a></li>
+                            <li><a href="#">Allahabad</a></li>
+                            <li><a href="#">Aurangabad</a></li>
+                            <li><a href="#">Bhopal</a></li>
+                        </ul>
+                    </div>
+                    <div class="div_5 div_2">
+                        <ul class="flex-wrap text-muted cities">
+                            <li><a href="#">Ranchi</a></li>
+                            <li><a href="#">Visakhapatnam</a></li>
+                            <li><a href="#">Bhubaneswar</a></li>
+                            <li><a href="#">Coimbatore</a></li>
+                            <li><a href="#">Mangalore</a></li>
+                            <li><a href="#">Vadodara</a></li>
+                            <li><a href="#">Nagpur</a></li>
+                            <li><a href="#" class="see_more">See More</a></li>
+                        </ul>
+                    </div>
+                    <div class="div_5 div_2">
+                        <ul class="flex-wrap text-muted cities">
+                            <li><a href="#">Agra</a></li>
+                            <li><a href="#">Dehradun</a></li>
+                            <li><a href="#">Mysore</a></li>
+                            <li><a href="#">Puducherry</a></li>
+                            <li><a href="#">Surat</a></li>
+                            <li><a href="#">Varanasi</a></li>
+                            <li><a href="#">Patna</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer_section bg-light mt-5 pt-5 pl-5 pr-5">
+            <footer>
+                <div class="container mb-4">
+                    <div class="row mb-4">
+                        <div class="d-flex justify-content-between d_block">
+                            <div class="footer_image">
+                                <img src="assets/image/logo2.png" class="img-fluid" alt="logo">
+                            </div>
+                            <div class="d-flex">
+                                <div class="dropup mr-2">
+                                    <button type="button" class="btn border-dark p-2" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span><i class="fa fa-flag mr-2"></i></span>
+                                        India
+                                        <span><i class="fa fa-sm fa-chevron-down"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <!-- Dropdown menu links -->
+                                        <li>A</li>
+                                        <li>B</li>
+                                    </ul>
+                                </div>
+                                <div class="dropup">
+                                    <button type="button" class="btn border-dark p-2" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span><i class="fa fa-globe mr-2"></i></span>
+                                        English
+                                        <span><i class="fa fa-sm fa-chevron-down"></i></span>
+                                    </button>
+                                    <ul class="dropdown-menu w-100">
+                                        <!-- Dropdown menu links -->
+                                        <li>A</li>
+                                        <li>B</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2 pl-3 pr-3 d-flex justify-content-between">
+                        <div class="div_5 div_2">
+                            <div class="footer_title text-uppercase mb-3">
+                                Company
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Report Fraud</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div_5 div_2">
+                            <div class="footer_title text-uppercase mb-3">
+                                FOR FOODIES
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="#">Code of Conduct</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Blogger Help</a></li>
+                                    <li><a href="#">Developers</a></li>
+                                    <li><a href="#">Mobile Apps</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div_5 div_2">
+                            <div class="footer_title text-uppercase mb-3">
+                                FOR RESTAURANTS
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="#">Add Restaurant</a></li>
+                                    <li><a href="#">Claim your Listing</a></li>
+                                    <li><a href="#">Business App</a></li>
+                                    <li><a href="#">Restaurant Widgets</a></li>
+                                    <li><a href="#">Products for Businesses</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div_5 div_2">
+                            <div class="footer_title text-uppercase mb-3">
+                                FOR YOU
+                            </div>
+                            <div class="footer_links">
+                                <ul>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div_5 div_2 social_links_section">
+                            <div class="footer_title text-uppercase mb-3">
+                                social links
+                            </div>
+                            <div class="icons d-flex align-items-center mb-1">
+                                <div class="icon">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </div>
+                                <div class="icon bg-dark text-white rounded-circle mx-1">
+                                    <i class="fab fa-twitter p-2"></i>
+                                </div>
+                                <div class="icon bg-dark text-white rounded-circle">
+                                    <i class="fab fa-instagram p-2"></i>
+                                </div>
+                            </div>
+                            <div class="footer_google_image">
+                                <img src="assets/image/10.png" class="img-fluid mb-1 img1" alt="img">
+                                <img src="assets/image/11.png" class="img-fluid" alt="img">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+                <div class="container mt-3 pb-2">
+                    <div class="row">
+                        <p class="text-muted copyright_text">
+                            By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy
+                            Policy
+                            and Content Policies. All trademarks are properties of their respective owners. 2008-2020 ©
+                            Zomato™ Pvt Ltd. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+
+        <!-- Optional JavaScript -->
+        <!-- Popper.js first, then Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+            integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
